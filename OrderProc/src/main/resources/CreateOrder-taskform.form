@@ -19,9 +19,9 @@
 <property name="readonly" value="false"/>
 <property name="inputBinding" value="order/suppliers"/>
 <property name="outputBinding" value="order/suppliers"/>
-<property name="defaultSubform" value="Supplier.form"/>
-<property name="previewSubform" value="Supplier.form"/>
-<property name="tableSubform" value="Supplier.form"/>
+<property name="defaultSubform" value="SupplierSelection.form"/>
+<property name="previewSubform" value="SupplierSelection.form"/>
+<property name="tableSubform" value="SupplierSelection.form"/>
 <property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
