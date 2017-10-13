@@ -1,0 +1,36 @@
+
+<form id="260973008">
+<property name="name" value="QuoteOrder-taskform.form"/>
+<property name="displayMode" value="template"/>
+<property name="labelMode" value="undefined"/>
+<property name="status" value="0"/>
+<property name="formTemplate" value="&lt;p&gt;$field{supplier_deliveryDate}&lt;/p&gt;
+
+&lt;p&gt;$field{supplier_offer}&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+
+&lt;p&gt;&amp;nbsp;&lt;/p&gt;
+"/>
+<field position="0" name="supplier_deliveryDate" type="InputDate" id="98613550">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;deliveryDate (supplier)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="supplier/deliveryDate"/>
+<property name="outputBinding" value="supplier/deliveryDate"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="supplier_offer" type="InputTextPrimitiveDouble" id="977144511">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;offer (supplier)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="supplier/offer"/>
+<property name="outputBinding" value="supplier/offer"/>
+<property name="fieldClass" value="double"/>
+</field>
+<dataHolder inputId="supplier" name="#E9E371" type="dataModelerEntry" outId="supplier" value="example.Supplier" id="supplier"/>
+</form>
