@@ -11,8 +11,15 @@ public class Supplier implements java.io.Serializable {
 	private java.lang.String user;
 	private double offer;
 	private java.util.Date deliveryDate;
+	private boolean selected;
 
 	public Supplier() {
+	}
+
+	@Override
+	public String toString() {
+		return String.format("Supplier [user=%s, offer=%s, deliveryDate=%s, selected=%s]", user, offer, deliveryDate,
+				isSelected());
 	}
 
 	public java.lang.String getUser() {
@@ -39,16 +46,16 @@ public class Supplier implements java.io.Serializable {
 		this.deliveryDate = deliveryDate;
 	}
 
-	public Supplier(java.lang.String user, double offer, java.util.Date deliveryDate) {
-		this.user = user;
-		this.offer = offer;
-		this.deliveryDate = deliveryDate;
+	public boolean getSelected() {
+		return selected;
 	}
 
-	@Override
-	public String toString() {
-		return String.format("Supplier [user=%s, offer=%s, deliveryDate=%s]", user, offer, deliveryDate);
+	public boolean isSelected() {
+		return selected;
 	}
-	
+
+	public void setSelected(boolean selected) {
+		this.selected = selected;
+	}
 
 }

@@ -10,15 +10,19 @@ public class Order implements java.io.Serializable {
 
 	private java.lang.String item;
 	private java.util.List<example.Supplier> suppliers;
+	private double price;
 	private Boolean managerApproval;
 
 	public Order() {
 	}
-	
+
 	@Override
 	public String toString() {
-		return String.format("Order [item=%s, suppliers=%s, managerApproval=%s]", item, suppliers, managerApproval);
+		return String.format("Order [item=%s, suppliers=%s, price=%s, managerApproval=%s]", item, suppliers, price,
+				managerApproval);
 	}
+
+
 
 	public java.lang.String getItem() {
 		return this.item;
@@ -47,5 +51,13 @@ public class Order implements java.io.Serializable {
 
 	public void setManagerApproval(Boolean managerApproval) {
 		this.managerApproval = managerApproval;
+	}
+
+	public double getPrice() {
+		return price;
+	}
+
+	public void setPrice(double price) {
+		this.price = price;
 	}
 }
