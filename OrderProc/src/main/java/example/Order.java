@@ -10,8 +10,14 @@ public class Order implements java.io.Serializable {
 
 	private java.lang.String item;
 	private java.util.List<example.Supplier> suppliers;
+	private Boolean managerApproval;
 
 	public Order() {
+	}
+	
+	@Override
+	public String toString() {
+		return String.format("Order [item=%s, suppliers=%s, managerApproval=%s]", item, suppliers, managerApproval);
 	}
 
 	public java.lang.String getItem() {
@@ -35,9 +41,11 @@ public class Order implements java.io.Serializable {
 		this.suppliers = suppliers;
 	}
 
-	@Override
-	public String toString() {
-		return String.format("Order [item=%s, suppliers=%s]", item, suppliers);
+	public Boolean getManagerApproval() {
+		return managerApproval;
 	}
 
+	public void setManagerApproval(Boolean managerApproval) {
+		this.managerApproval = managerApproval;
+	}
 }
