@@ -8,6 +8,7 @@ public class Order implements java.io.Serializable {
 
 	static final long serialVersionUID = 1L;
 
+	private long orderId;
 	private java.lang.String item;
 	private java.util.List<example.Supplier> suppliers;
 	private double price;
@@ -18,11 +19,9 @@ public class Order implements java.io.Serializable {
 
 	@Override
 	public String toString() {
-		return String.format("Order [item=%s, suppliers=%s, price=%s, managerApproval=%s]", item, suppliers, price,
-				managerApproval);
+		return String.format("Order [orderId=%s, item=%s, suppliers=%s, price=%s, managerApproval=%s]", orderId, item,
+				suppliers, price, managerApproval);
 	}
-
-
 
 	public java.lang.String getItem() {
 		return this.item;
@@ -59,5 +58,13 @@ public class Order implements java.io.Serializable {
 
 	public void setPrice(double price) {
 		this.price = price;
+	}
+
+	public long getOrderId() {
+		return orderId;
+	}
+
+	public void setOrderId(long orderId) {
+		this.orderId = orderId;
 	}
 }

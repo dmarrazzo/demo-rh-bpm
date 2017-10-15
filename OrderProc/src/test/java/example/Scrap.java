@@ -23,6 +23,9 @@ public class Scrap {
 
 	public void scrap() {
 	
+		order.setOrderId(kcontext.getProcessInstance().getId());
+		kcontext.setVariable("order",order);
+		
 		//-------------------------------------------------
 
 		kcontext.setVariable("suppliers",order.getSuppliers());
@@ -36,6 +39,7 @@ public class Scrap {
 		//order.getManagerApproval() == false;
 
 		//-------------------------------------------------
+		
 	}
 	
 	public void scrap2() {
