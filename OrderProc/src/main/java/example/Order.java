@@ -13,14 +13,16 @@ public class Order implements java.io.Serializable {
 	private java.util.List<example.Supplier> suppliers;
 	private double price;
 	private Boolean managerApproval;
+	private String rejectionReason;
 
 	public Order() {
 	}
 
 	@Override
 	public String toString() {
-		return String.format("Order [orderId=%s, item=%s, suppliers=%s, price=%s, managerApproval=%s]", orderId, item,
-				suppliers, price, managerApproval);
+		return String.format(
+				"Order [orderId=%s, item=%s, suppliers=%s, price=%s, managerApproval=%s, rejectionReason=%s]", orderId,
+				item, suppliers, price, managerApproval, rejectionReason);
 	}
 
 	public java.lang.String getItem() {
@@ -66,5 +68,13 @@ public class Order implements java.io.Serializable {
 
 	public void setOrderId(long orderId) {
 		this.orderId = orderId;
+	}
+
+	public String getRejectionReason() {
+		return rejectionReason;
+	}
+
+	public void setRejectionReason(String rejectionReason) {
+		this.rejectionReason = rejectionReason;
 	}
 }
