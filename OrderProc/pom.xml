@@ -29,6 +29,16 @@
       <artifactId>jbpm-workitems</artifactId>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+    	<groupId>org.jbpm</groupId>
+    	<artifactId>jbpm-human-task-core</artifactId>
+    	<scope>provided</scope>
+    </dependency>
+    <dependency>
+    	<groupId>org.jbpm</groupId>
+    	<artifactId>jbpm-runtime-manager</artifactId>
+    	<scope>provided</scope>
+    </dependency>
   </dependencies>
   <repositories>
     <repository>

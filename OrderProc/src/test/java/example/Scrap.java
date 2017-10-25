@@ -39,7 +39,7 @@ public class Scrap {
 		//order.getManagerApproval() == false;
 
 		//-------------------------------------------------
-		
+		kcontext.getProcessInstance().getId();
 	}
 	
 	public void scrap2() {
