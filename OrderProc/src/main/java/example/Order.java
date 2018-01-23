@@ -10,10 +10,14 @@ public class Order implements java.io.Serializable {
 
 	private long orderId;
 	private java.lang.String item;
-	private java.util.List<example.Supplier> suppliers;
+	private java.util.List<model.Supplier> suppliers;
 	private double price;
 	private Boolean managerApproval;
 	private String rejectionReason;
+
+	private java.lang.String category;
+
+	private java.lang.String urgency;
 
 	public Order() {
 	}
@@ -21,8 +25,8 @@ public class Order implements java.io.Serializable {
 	@Override
 	public String toString() {
 		return String.format(
-				"Order [orderId=%s, item=%s, suppliers=%s, price=%s, managerApproval=%s, rejectionReason=%s]", orderId,
-				item, suppliers, price, managerApproval, rejectionReason);
+				"Order [orderId=%s, item=%s, suppliers=%s, price=%s, managerApproval=%s, rejectionReason=%s, category=%s, urgency=%s]",
+				orderId, item, suppliers, price, managerApproval, rejectionReason, category, urgency);
 	}
 
 	public java.lang.String getItem() {
@@ -33,15 +37,15 @@ public class Order implements java.io.Serializable {
 		this.item = item;
 	}
 
-	public java.util.List<example.Supplier> getSuppliers() {
+	public java.util.List<model.Supplier> getSuppliers() {
 		return this.suppliers;
 	}
 
-	public void setSuppliers(java.util.List<example.Supplier> suppliers) {
+	public void setSuppliers(java.util.List<model.Supplier> suppliers) {
 		this.suppliers = suppliers;
 	}
 
-	public Order(java.lang.String item, java.util.List<example.Supplier> suppliers) {
+	public Order(java.lang.String item, java.util.List<model.Supplier> suppliers) {
 		this.item = item;
 		this.suppliers = suppliers;
 	}
@@ -76,5 +80,34 @@ public class Order implements java.io.Serializable {
 
 	public void setRejectionReason(String rejectionReason) {
 		this.rejectionReason = rejectionReason;
+	}
+
+	public java.lang.String getCategory() {
+		return this.category;
+	}
+
+	public void setCategory(java.lang.String category) {
+		this.category = category;
+	}
+
+	public java.lang.String getUrgency() {
+		return this.urgency;
+	}
+
+	public void setUrgency(java.lang.String urgency) {
+		this.urgency = urgency;
+	}
+
+	public Order(long orderId, java.lang.String item, java.util.List<model.Supplier> suppliers, double price,
+			java.lang.Boolean managerApproval, java.lang.String rejectionReason, java.lang.String category,
+			java.lang.String urgency) {
+		this.orderId = orderId;
+		this.item = item;
+		this.suppliers = suppliers;
+		this.price = price;
+		this.managerApproval = managerApproval;
+		this.rejectionReason = rejectionReason;
+		this.category = category;
+		this.urgency = urgency;
 	}
 }
