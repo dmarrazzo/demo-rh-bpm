@@ -3,6 +3,8 @@ import model.Supplier;
 import model.CheapestSupplier;
 
 rule "cheapest supplier"
+salience 100
+
 	when
 		$o: Order();
 		accumulate (Supplier($offer : offer) from $o.suppliers;

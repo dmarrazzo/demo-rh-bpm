@@ -48,6 +48,8 @@ public class LocalTest {
 
 		// -------------
 		Order order = new Order();
+		order.setCategory("basic");
+		
 		List<Supplier> suppliers = new ArrayList<>();
 		
 		Supplier supplier;
