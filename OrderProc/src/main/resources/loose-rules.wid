@@ -1,0 +1,23 @@
+import org.drools.core.process.core.datatype.impl.type.StringDataType;
+import org.drools.core.process.core.datatype.impl.type.ObjectDataType;
+[
+    [
+        "name" : "loose-rules",
+        "description" : "invoke rules from an independent rule project",
+        "parameters" : [
+            "kbaseName" : new StringDataType(),
+            "fact" : new ObjectDataType()
+        ],
+        "results" : [
+            "fact" : new ObjectDataType()
+        ],
+        "displayName" : "Rule",
+        "icon" : "rule.png",
+        "category" : "extras",
+        "defaultHandler" : "mvel: new loose.rules.wih.LooseRulesWorkItemHandler( groupId, artifactId, version, 10000 )",
+        "documentation" : "index.html",
+        "mavenDependencies" : [
+            "example:loose-rules-wih:1.0-SNAPSHOT"
+        ]
+    ]
+]
