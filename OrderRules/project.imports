@@ -4,6 +4,12 @@
       <import>
         <type>java.lang.Number</type>
       </import>
+      <import>
+        <type>model.Order</type>
+      </import>
+      <import>
+        <type>model.Supplier</type>
+      </import>
     </imports>
   </imports>
   <version>1.0</version>

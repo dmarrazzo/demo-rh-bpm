@@ -1,0 +1,13 @@
+import model.Order;
+import model.Supplier;
+
+rule "cheapest supplier"
+	when
+		$o: Order();
+		accumulate (Supplier($offer : offer) from $o.suppliers;
+			$min : min($offer)
+		) 
+		$select: Supplier(selected == true, offer == $min) from $o.suppliers;
+	then
+		System.out.println("ok");
+end
