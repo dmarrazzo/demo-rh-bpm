@@ -43,6 +43,10 @@ public class Scrap {
 
 		//-------------------------------------------------
 		kcontext.getProcessInstance().getId();
+		//-------------------------------------------------
+		order.setManagerApproval(new Boolean(true));
+		kcontext.setVariable("order",order);
+		
 	}
 	
 	public void scrap2() {
