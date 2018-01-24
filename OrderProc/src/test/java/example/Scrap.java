@@ -2,19 +2,22 @@ package example;
 
 import java.util.List;
 
+import model.Order;
+import model.Supplier;
+
 @SuppressWarnings({ "unchecked", "rawtypes" })
 public class Scrap {
 	org.kie.api.runtime.process.ProcessContext kcontext;
-	example.Order order = new Order();
+	model.Order order = new Order();
 	java.util.List suppliers = new java.util.ArrayList();;
 
 	private void init() {
-		example.Supplier supplier = new example.Supplier();
+		model.Supplier supplier = new model.Supplier();
 		supplier.setDeliveryDate(new java.util.Date());
 		supplier.setOffer(1200.0);
 		supplier.setSelected(true);
 		suppliers.add(supplier);
-		supplier = new example.Supplier();
+		supplier = new model.Supplier();
 		supplier.setDeliveryDate(new java.util.Date());
 		supplier.setOffer(1000.0);
 		suppliers.add(supplier);
@@ -43,9 +46,9 @@ public class Scrap {
 	}
 	
 	public void scrap2() {
-		order = new example.Order();
+		order = new model.Order();
 		suppliers = new java.util.ArrayList();
-		example.Supplier supplier = new example.Supplier();
+		model.Supplier supplier = new model.Supplier();
 		supplier.setDeliveryDate(new java.util.Date());
 		supplier.setOffer(1000.0);
 		suppliers.add(supplier);
@@ -58,7 +61,7 @@ public class Scrap {
 	}
 	
 	public void scrap3() {
-		java.util.List<example.Supplier> suppliersT = (java.util.List<example.Supplier>) suppliers;
+		java.util.List<model.Supplier> suppliersT = (java.util.List<model.Supplier>) suppliers;
 		
 		double selectedPrice = suppliersT.stream()
 								        .filter(s -> s.isSelected())

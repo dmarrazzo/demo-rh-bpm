@@ -1,40 +1,40 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:color="http://www.omg.org/spec/BPMN/non-normative/color" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:drools="http://www.jboss.org/drools" id="_zR6-YACDEeiYa-9HffUNWA" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" exporter="jBPM Designer" exporterVersion="6.2.0" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
-  <bpmn2:itemDefinition id="_orderItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="_orderItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="_suppliersItem" structureRef="java.util.List"/>
   <bpmn2:itemDefinition id="_suppliersOutItem" structureRef="java.util.List"/>
   <bpmn2:itemDefinition id="_7DE32B78-5064-4651-B2F8-307C9CDF8D69_multiInstanceItemType"/>
   <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_TaskNameInputXItem" structureRef="String"/>
-  <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderInputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderInputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_DueDateInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_SkippableInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_GroupIdInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_CommentInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderOutputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderOutputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_TaskNameInputXItem" structureRef="String"/>
-  <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderInputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderInputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_DueDateInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_SkippableInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_GroupIdInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_CommentInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderOutputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderOutputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__EC406CAE-689E-46DE-A799-AF86E0B605DF_TaskNameInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__EC406CAE-689E-46DE-A799-AF86E0B605DF_DueDateInputXItem" structureRef="String"/>
-  <bpmn2:itemDefinition id="__EC406CAE-689E-46DE-A799-AF86E0B605DF_orderInputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__EC406CAE-689E-46DE-A799-AF86E0B605DF_orderInputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__EC406CAE-689E-46DE-A799-AF86E0B605DF_GroupIdInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__EC406CAE-689E-46DE-A799-AF86E0B605DF_SkippableInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__EC406CAE-689E-46DE-A799-AF86E0B605DF_CommentInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_TaskNameInputXItem" structureRef="String"/>
-  <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderInputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderInputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_DueDateInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_SkippableInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_GroupIdInputXItem" structureRef="Object"/>
   <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_CommentInputXItem" structureRef="Object"/>
-  <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderOutputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderOutputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_TaskNameInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_MethodInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_UrlInputXItem" structureRef="String"/>
-  <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_ContentInputXItem" structureRef="example.Order"/>
+  <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_ContentInputXItem" structureRef="model.Order"/>
   <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_PasswordInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_ConnectTimeoutInputXItem" structureRef="String"/>
   <bpmn2:itemDefinition id="__B46881D9-3A48-435C-ABCD-446E349E1F29_UsernameInputXItem" structureRef="String"/>
@@ -144,12 +144,12 @@ kcontext.setVariable("order",order);
       <bpmn2:outgoing>_D237FADE-9C6F-449A-BDE6-C3C4692D8F9B</bpmn2:outgoing>
       <bpmn2:ioSpecification id="_zR6-ZgCDEeiYa-9HffUNWA">
         <bpmn2:dataInput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_TaskNameInputX" drools:dtype="String" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_TaskNameInputXItem" name="TaskName"/>
-        <bpmn2:dataInput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderInputX" drools:dtype="example.Order" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderInputXItem" name="order"/>
+        <bpmn2:dataInput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderInputX" drools:dtype="model.Order" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderInputXItem" name="order"/>
         <bpmn2:dataInput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_DueDateInputX" drools:dtype="String" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_DueDateInputXItem" name="DueDate"/>
         <bpmn2:dataInput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_SkippableInputX" drools:dtype="Object" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_SkippableInputXItem" name="Skippable"/>
         <bpmn2:dataInput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_GroupIdInputX" drools:dtype="Object" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_GroupIdInputXItem" name="GroupId"/>
         <bpmn2:dataInput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_CommentInputX" drools:dtype="Object" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_CommentInputXItem" name="Comment"/>
-        <bpmn2:dataOutput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderOutputX" drools:dtype="example.Order" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderOutputXItem" name="order"/>
+        <bpmn2:dataOutput id="_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderOutputX" drools:dtype="model.Order" itemSubjectRef="__78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderOutputXItem" name="order"/>
         <bpmn2:inputSet id="_zR7lcACDEeiYa-9HffUNWA">
           <bpmn2:dataInputRefs>_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_orderInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_78FDD383-2BE9-49EC-A3B5-60B4C8A66A01_DueDateInputX</bpmn2:dataInputRefs>
@@ -217,7 +217,7 @@ kcontext.setVariable("order",order);
 ]]></drools:script>
         </drools:onEntry-script>
         <drools:onExit-script scriptFormat="http://www.java.com/java">
-          <drools:script><![CDATA[java.util.List<example.Supplier> suppliersT = (java.util.List<example.Supplier>) order.getSuppliers();
+          <drools:script><![CDATA[java.util.List<model.Supplier> suppliersT = (java.util.List<model.Supplier>) order.getSuppliers();
 
 double selectedPrice = suppliersT.stream()
 						         .filter(s -> s.isSelected())
@@ -234,12 +234,12 @@ kcontext.setVariable("order",order);
       <bpmn2:outgoing>_B95C1594-C529-4B03-BB5A-ABC170068174</bpmn2:outgoing>
       <bpmn2:ioSpecification id="_zR7liACDEeiYa-9HffUNWA">
         <bpmn2:dataInput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_TaskNameInputX" drools:dtype="String" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_TaskNameInputXItem" name="TaskName"/>
-        <bpmn2:dataInput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderInputX" drools:dtype="example.Order" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderInputXItem" name="order"/>
+        <bpmn2:dataInput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderInputX" drools:dtype="model.Order" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderInputXItem" name="order"/>
         <bpmn2:dataInput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_DueDateInputX" drools:dtype="String" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_DueDateInputXItem" name="DueDate"/>
         <bpmn2:dataInput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_SkippableInputX" drools:dtype="Object" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_SkippableInputXItem" name="Skippable"/>
         <bpmn2:dataInput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_GroupIdInputX" drools:dtype="Object" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_GroupIdInputXItem" name="GroupId"/>
         <bpmn2:dataInput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_CommentInputX" drools:dtype="Object" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_CommentInputXItem" name="Comment"/>
-        <bpmn2:dataOutput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderOutputX" drools:dtype="example.Order" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderOutputXItem" name="order"/>
+        <bpmn2:dataOutput id="_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderOutputX" drools:dtype="model.Order" itemSubjectRef="__56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderOutputXItem" name="order"/>
         <bpmn2:inputSet id="_zR7liQCDEeiYa-9HffUNWA">
           <bpmn2:dataInputRefs>_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_orderInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_56D17A2F-8AB3-4441-BB44-3D98ACFE8B34_DueDateInputX</bpmn2:dataInputRefs>
@@ -312,7 +312,7 @@ kcontext.setVariable("order",order);
       <bpmn2:ioSpecification id="_zR7lpACDEeiYa-9HffUNWA">
         <bpmn2:dataInput id="_EC406CAE-689E-46DE-A799-AF86E0B605DF_TaskNameInputX" drools:dtype="String" itemSubjectRef="__EC406CAE-689E-46DE-A799-AF86E0B605DF_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_EC406CAE-689E-46DE-A799-AF86E0B605DF_DueDateInputX" drools:dtype="String" itemSubjectRef="__EC406CAE-689E-46DE-A799-AF86E0B605DF_DueDateInputXItem" name="DueDate"/>
-        <bpmn2:dataInput id="_EC406CAE-689E-46DE-A799-AF86E0B605DF_orderInputX" drools:dtype="example.Order" itemSubjectRef="__EC406CAE-689E-46DE-A799-AF86E0B605DF_orderInputXItem" name="order"/>
+        <bpmn2:dataInput id="_EC406CAE-689E-46DE-A799-AF86E0B605DF_orderInputX" drools:dtype="model.Order" itemSubjectRef="__EC406CAE-689E-46DE-A799-AF86E0B605DF_orderInputXItem" name="order"/>
         <bpmn2:dataInput id="_EC406CAE-689E-46DE-A799-AF86E0B605DF_GroupIdInputX" drools:dtype="Object" itemSubjectRef="__EC406CAE-689E-46DE-A799-AF86E0B605DF_GroupIdInputXItem" name="GroupId"/>
         <bpmn2:dataInput id="_EC406CAE-689E-46DE-A799-AF86E0B605DF_SkippableInputX" drools:dtype="Object" itemSubjectRef="__EC406CAE-689E-46DE-A799-AF86E0B605DF_SkippableInputXItem" name="Skippable"/>
         <bpmn2:dataInput id="_EC406CAE-689E-46DE-A799-AF86E0B605DF_CommentInputX" drools:dtype="Object" itemSubjectRef="__EC406CAE-689E-46DE-A799-AF86E0B605DF_CommentInputXItem" name="Comment"/>
@@ -403,12 +403,12 @@ kcontext.setVariable("order",order);
       <bpmn2:outgoing>_0C10B442-AA8A-4962-B428-5EAE085F6BCB</bpmn2:outgoing>
       <bpmn2:ioSpecification id="_zR7lvwCDEeiYa-9HffUNWA">
         <bpmn2:dataInput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_TaskNameInputX" drools:dtype="String" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_TaskNameInputXItem" name="TaskName"/>
-        <bpmn2:dataInput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_orderInputX" drools:dtype="example.Order" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderInputXItem" name="order"/>
+        <bpmn2:dataInput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_orderInputX" drools:dtype="model.Order" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderInputXItem" name="order"/>
         <bpmn2:dataInput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_DueDateInputX" drools:dtype="String" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_DueDateInputXItem" name="DueDate"/>
         <bpmn2:dataInput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_SkippableInputX" drools:dtype="Object" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_SkippableInputXItem" name="Skippable"/>
         <bpmn2:dataInput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_GroupIdInputX" drools:dtype="Object" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_GroupIdInputXItem" name="GroupId"/>
         <bpmn2:dataInput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_CommentInputX" drools:dtype="Object" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_CommentInputXItem" name="Comment"/>
-        <bpmn2:dataOutput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_orderOutputX" drools:dtype="example.Order" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderOutputXItem" name="order"/>
+        <bpmn2:dataOutput id="_2DC3DAF8-2338-426E-B333-909FD95B7E71_orderOutputX" drools:dtype="model.Order" itemSubjectRef="__2DC3DAF8-2338-426E-B333-909FD95B7E71_orderOutputXItem" name="order"/>
         <bpmn2:inputSet id="_zR7lwACDEeiYa-9HffUNWA">
           <bpmn2:dataInputRefs>_2DC3DAF8-2338-426E-B333-909FD95B7E71_orderInputX</bpmn2:dataInputRefs>
           <bpmn2:dataInputRefs>_2DC3DAF8-2338-426E-B333-909FD95B7E71_DueDateInputX</bpmn2:dataInputRefs>
@@ -488,7 +488,7 @@ kcontext.setVariable("order",order);
         <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_TaskNameInputX" drools:dtype="String" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_TaskNameInputXItem" name="TaskName"/>
         <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_MethodInputX" drools:dtype="String" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_MethodInputXItem" name="Method"/>
         <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_UrlInputX" drools:dtype="String" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_UrlInputXItem" name="Url"/>
-        <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_ContentInputX" drools:dtype="example.Order" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_ContentInputXItem" name="Content"/>
+        <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_ContentInputX" drools:dtype="model.Order" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_ContentInputXItem" name="Content"/>
         <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_PasswordInputX" drools:dtype="String" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_PasswordInputXItem" name="Password"/>
         <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_ConnectTimeoutInputX" drools:dtype="String" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_ConnectTimeoutInputXItem" name="ConnectTimeout"/>
         <bpmn2:dataInput id="_B46881D9-3A48-435C-ABCD-446E349E1F29_UsernameInputX" drools:dtype="String" itemSubjectRef="__B46881D9-3A48-435C-ABCD-446E349E1F29_UsernameInputXItem" name="Username"/>
@@ -595,12 +595,12 @@ kcontext.setVariable("order",order);
         <bpmn2:outgoing>_7F5625E4-A2D6-487E-B613-D3A8C46C5501</bpmn2:outgoing>
         <bpmn2:ioSpecification id="_zR8MlwCDEeiYa-9HffUNWA">
           <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_TaskNameInputX" drools:dtype="String" name="TaskName"/>
-          <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_supplierInputX" drools:dtype="example.Supplier" name="supplier"/>
-          <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_orderInputX" drools:dtype="example.Order" name="order"/>
+          <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_supplierInputX" drools:dtype="model.Supplier" name="supplier"/>
+          <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_orderInputX" drools:dtype="model.Order" name="order"/>
           <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_DueDateInputX" drools:dtype="String" name="DueDate"/>
           <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_SkippableInputX" drools:dtype="Object" name="Skippable"/>
           <bpmn2:dataInput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_CommentInputX" drools:dtype="Object" name="Comment"/>
-          <bpmn2:dataOutput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_supplierOutputX" drools:dtype="example.Supplier" name="supplier"/>
+          <bpmn2:dataOutput id="_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_supplierOutputX" drools:dtype="model.Supplier" name="supplier"/>
           <bpmn2:inputSet id="_zR8MmACDEeiYa-9HffUNWA">
             <bpmn2:dataInputRefs>_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_supplierInputX</bpmn2:dataInputRefs>
             <bpmn2:dataInputRefs>_DAD720BB-9616-43E9-81D2-084CDA3D8C2D_orderInputX</bpmn2:dataInputRefs>

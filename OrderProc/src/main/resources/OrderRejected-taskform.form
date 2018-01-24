@@ -37,5 +37,5 @@
 <property name="inputBinding" value="order/rejectionReason"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="order" name="#E9E371" type="dataModelerEntry" outId="" value="example.Order" id="order"/>
+<dataHolder inputId="order" name="#E9E371" type="dataModelerEntry" outId="" value="model.Order" id="order"/>
 </form>

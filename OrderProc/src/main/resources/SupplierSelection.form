@@ -16,5 +16,5 @@
 <property name="outputBinding" value="supplier/user"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="supplier" name="#E9E371" type="dataModelerEntry" outId="supplier" value="example.Supplier" id="supplier"/>
+<dataHolder inputId="supplier" name="#E9E371" type="dataModelerEntry" outId="supplier" value="model.Supplier" id="supplier"/>
 </form>

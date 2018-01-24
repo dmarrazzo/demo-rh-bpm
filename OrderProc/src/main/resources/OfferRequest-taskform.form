@@ -15,7 +15,7 @@
 <property name="outputBinding" value="order/item"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="4" name="order_suppliers" bag-type="example.Supplier" type="MultipleSubform" id="611055251">
+<field position="4" name="order_suppliers" bag-type="model.Supplier" type="MultipleSubform" id="611055251">
 <property name="fieldRequired" value="false"/>
 <property name="groupWithPrevious" value="false"/>
 <property name="label" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;suppliers to engagequot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
@@ -71,6 +71,6 @@
 <property name="readonly" value="false"/>
 <property name="fieldClass" value="Separator"/>
 </field>
-<dataHolder inputId="order" name="#E9E371" type="dataModelerEntry" outId="order" value="example.Order" id="order"/>
+<dataHolder inputId="order" name="#E9E371" type="dataModelerEntry" outId="order" value="model.Order" id="order"/>
 <dataHolder inputId="" name="#FF54A7" type="basicType" outId="ActorId" value="java.lang.String" id="purchaseActorId"/>
 </form>

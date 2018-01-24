@@ -19,7 +19,7 @@ import org.kie.server.client.QueryServicesClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import example.Order;
+import model.Order;
 
 @SuppressWarnings("unused")
 public class Main {
