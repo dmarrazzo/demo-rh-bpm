@@ -1,5 +1,6 @@
 import model.Order;
 import model.Supplier;
+import model.CheapestSupplier;
 
 rule "cheapest supplier"
 	when
@@ -9,5 +10,6 @@ rule "cheapest supplier"
 		) 
 		$select: Supplier(selected == true, offer == $min) from $o.suppliers;
 	then
+		insertLogical( new CheapestSupplier());
 		System.out.println("ok");
 end
