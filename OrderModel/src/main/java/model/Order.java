@@ -20,6 +20,7 @@ public class Order implements java.io.Serializable {
 	private java.lang.String urgency;
 
 	public Order() {
+		setManagerApproval(false);
 	}
 
 	@Override
