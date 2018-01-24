@@ -21,7 +21,6 @@ import org.slf4j.LoggerFactory;
 
 import model.Order;
 
-@SuppressWarnings("unused")
 public class Main {
 
 	final static Logger log = LoggerFactory.getLogger(Main.class);

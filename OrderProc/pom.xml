@@ -39,6 +39,11 @@
       <artifactId>jbpm-runtime-manager</artifactId>
       <scope>provided</scope>
     </dependency>
+    <dependency>
+    	<groupId>example</groupId>
+    	<artifactId>OrderModel</artifactId>
+    	<version>1.0-SNAPSHOT</version>
+    </dependency>
   </dependencies>
   <repositories>
     <repository>
