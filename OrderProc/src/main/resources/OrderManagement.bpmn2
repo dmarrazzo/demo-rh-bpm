@@ -726,10 +726,10 @@ kcontext.setVariable("order",order);
         <dc:Bounds height="132.0" width="261.0" x="375.0" y="146.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_7eQTVhMyEeit3axss36AGQ" bpmnElement="_5D6BE214-4048-4396-91C7-DD114CEBB515">
-        <dc:Bounds height="165.0" width="1260.0" x="90.0" y="300.0"/>
+        <dc:Bounds height="165.0" width="1260.0" x="90.0" y="295.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_7eQTVxMyEeit3axss36AGQ" bpmnElement="_047CEC3E-EF98-4B37-A529-11C73CD44BC1">
-        <dc:Bounds height="191.0" width="1260.0" x="90.0" y="465.0"/>
+        <dc:Bounds height="191.0" width="1260.0" x="90.0" y="460.0"/>
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape id="_7eQTWBMyEeit3axss36AGQ" bpmnElement="_7E4A5072-85CB-4B4F-9BA4-81FE4C640196">
         <dc:Bounds height="165.0" width="1260.0" x="90.0" y="130.0"/>
