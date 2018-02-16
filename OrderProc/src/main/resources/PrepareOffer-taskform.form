@@ -114,6 +114,6 @@
 <property name="inputBinding" value="order/item"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<dataHolder inputId="order" name="#9BCAFA" type="dataModelerEntry" outId="" value="model.Order" id="order"/>
-<dataHolder inputId="supplier" name="#E9E371" type="dataModelerEntry" outId="supplier" value="model.Supplier" id="supplier"/>
+<dataHolder inputId="order" name="#9BCAFA" type="dataModelerEntry" outId="" value="model.OrderInfo" id="order"/>
+<dataHolder inputId="supplier" name="#E9E371" type="dataModelerEntry" outId="supplier" value="model.SupplierInfo" id="supplier"/>
 </form>

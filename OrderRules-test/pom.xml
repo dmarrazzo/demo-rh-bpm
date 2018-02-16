@@ -11,7 +11,7 @@
 			<dependency>
 				<groupId>org.jboss.bom.brms</groupId>
 				<artifactId>jboss-brms-bpmsuite-platform-bom</artifactId>
-				<version>6.4.7.GA-redhat-1</version>
+				<version>6.4.8.GA-redhat-2</version>
 				<type>pom</type>
 				<scope>import</scope>
 			</dependency>
@@ -21,7 +21,7 @@
 		<dependency>
 			<groupId>example</groupId>
 			<artifactId>OrderProc</artifactId>
-			<version>1.1-SNAPSHOT</version>
+			<version>1.2-SNAPSHOT</version>
 		</dependency>
 		<dependency>
 			<groupId>example</groupId>
@@ -75,6 +75,10 @@
 			<groupId>org.jbpm</groupId>
 			<artifactId>jbpm-bpmn2</artifactId>
 			<scope>runtime</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.kie</groupId>
+			<artifactId>kie-ci</artifactId>
 		</dependency>
 	</dependencies>
 	<build>

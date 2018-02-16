@@ -6,7 +6,13 @@
     <persistence-mode>JPA</persistence-mode>
     <runtime-strategy>SINGLETON</runtime-strategy>
     <marshalling-strategies/>
-    <event-listeners/>
+    <event-listeners>
+        <event-listener>
+            <resolver>reflection</resolver>
+            <identifier>org.drools.core.event.DebugProcessEventListener</identifier>
+            <parameters/>
+        </event-listener>
+    </event-listeners>
     <task-event-listeners/>
     <globals/>
     <work-item-handlers>
@@ -30,7 +36,7 @@
         </work-item-handler>
         <work-item-handler>
             <resolver>mvel</resolver>
-            <identifier>new loose.rules.wih.LooseRulesWorkItemHandler( "example", "OrderRules", "1.0-SNAPSHOT", 10000 )</identifier>
+            <identifier>new loose.rules.wih.LooseRulesWorkItemHandler( "example", "OrderRules", "2.0-SNAPSHOT", 10000 )</identifier>
             <parameters/>
             <name>loose-rules</name>
         </work-item-handler>

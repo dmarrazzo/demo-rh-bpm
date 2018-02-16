@@ -19,7 +19,7 @@ import org.kie.server.client.QueryServicesClient;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import model.Order;
+import model.OrderInfo;
 
 public class Main {
 
@@ -28,8 +28,8 @@ public class Main {
 	private static final String URL = "http://localhost:8081/kie-server/services/rest/server";
 	private static final String user = System.getProperty("username", "donato");
 	private static final String password = System.getProperty("password", "donato");
-	private static final String CONTAINER = "example:OrderProc:1.1-SNAPSHOT";
-	private static String PROCESS_ID = "OrderProc.OrderManagement";
+	private static final String CONTAINER = "example:OrderInfoProc:1.1-SNAPSHOT";
+	private static String PROCESS_ID = "OrderInfoProc.OrderInfoManagement";
 	
 
 	private static final String QUERY_NAME_ALL_PROCESS_INSTANCES_WITH_VARIABLES = "getAllProcessInstancesWithVariables";
@@ -55,7 +55,7 @@ public class Main {
 			Map<String, Object> variables = new HashMap<>();
 
 			// ---------------------------
-			Order order = new Order();
+			OrderInfo order = new OrderInfo();
 			order.setItem("Lenovo Thinkpat T470s");
 			
 			variables.put("order", order);
@@ -119,7 +119,7 @@ public class Main {
 		// Marshalling
 		config.setMarshallingFormat(MarshallingFormat.JSON);
 		Set<Class<?>> extraClasses = new HashSet<Class<?>>();
-		extraClasses.add(Order.class);
+		extraClasses.add(OrderInfo.class);
 		config.addExtraClasses(extraClasses);
 		Map<String, String> headers = null;
 		config.setHeaders(headers);
