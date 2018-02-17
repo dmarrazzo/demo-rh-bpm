@@ -1,5 +1,6 @@
 package example;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import model.OrderInfo;
@@ -62,6 +63,11 @@ public class Scrap {
 		kcontext.setVariable("order",order);
 
 		//-------------------------------------------------
+		List<SupplierInfo> suppliersOut = new ArrayList<>();
+		for (int i = 0; i < suppliersOut.size(); i++) {
+			if (suppliersOut.get(i) == null) 
+				suppliersOut.remove(i);
+		}
 	}
 	
 	public void scrap3() {
