@@ -38,13 +38,14 @@ Decision Table
 Users & Roles
 -----------------------
 
-roles:
+In the process, there are 4 roles:
 
-- user
-- manager
-- supplier
+- The process starter who issue the purchase request (any in the **user** group)
+- The purchase department employee (any user in the **developer** group)
+- The manager of the purchase department (any user in the **manager** group)
+- The suppliers that answer to the order offer request (3 named users in the **supplier** group)
 
-users:
+The suppliers users must match the following user names:
 
 - supplier1
 - supplier2
@@ -57,7 +58,7 @@ Enable multiple incoming flow sequences for activities:
 
 - Add this system property to the standalone.xml: `jbpm.enable.multi.con=true`
 
-Add users through JBoss EAP command line:
+Considering a standard installation where the group are mapped in the JEE roles, you can add users through JBoss EAP command line:
 
 	./add-user.sh -a -u supplier1 -p password --role user,supplier
 	./add-user.sh -a -u supplier2 -p password --role user,supplier
@@ -76,6 +77,14 @@ In Business Central:
 - Clone this repository
 - Build and deploy `OrderRules`
 - Build and deploy `OrderProc`
+
+The last task of the process involves an external REST Service (Place the order in ERP System): it sends an *HTTP GET request* at this URL: `http://localhost:8090/test`.
+
+To emulate the REST Service, you can run [SOAP UI](https://www.soapui.org/) and here you can find a project ready to be imported in SOAP UI:
+
+- [SOAP UI Project with the mock service](install/REST-Project-1-soapui-project.xml).
+- To start the service: double click on **REST MockService 1** to open the mock window in SOAP UI and click on the start icon (green arrow).
+
 
 TODO
 -----------------------
