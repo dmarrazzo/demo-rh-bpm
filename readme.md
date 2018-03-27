@@ -5,7 +5,7 @@ Order Management Demo
 Introduction
 -----------------------
 
-This demo aim to show some of the core capabilities of [Red Hat JBoss BPM Suite v6.4](https://www.redhat.com/en/technologies/jboss-middleware/bpm):
+This demo aims to show some of the core capabilities of [Red Hat JBoss BPM Suite v6.4](https://www.redhat.com/en/technologies/jboss-middleware/bpm):
 
 - A Human Intensive process not too complex to be quickly understood with some interesting details that are common requirements in the process modelling.
 - A Decision Table that specify when to require the manager approval
@@ -15,7 +15,7 @@ In this [video recording](https://youtu.be/pSCEHUhI5oQ) you can find a round tri
 Use case scenario
 -----------------------
 
-The Order Management process is a classical provisioning flow that any kind of organization has place.
+The Order Management process is a classical provisioning flow that any kind of organization has in place.
 
 The purchase department receives a purchase request (process start), a purchase specialist will see in his / her task list the **Offer Request** task. To complete the task, he/she has to specify the item category and which supplier to involve in the request for proposal (in demo there are three options: supplier1, supplier2, supplier3). 
 
@@ -40,7 +40,7 @@ Users & Roles
 
 In the process, there are 4 roles:
 
-- The process starter who issue the purchase request (any in the **user** group)
+- The process starter who issues the purchase request (any in the **user** group)
 - The purchase department employee (any user in the **developer** group)
 - The manager of the purchase department (any user in the **manager** group)
 - The suppliers that answer to the order offer request (3 named users in the **supplier** group)
