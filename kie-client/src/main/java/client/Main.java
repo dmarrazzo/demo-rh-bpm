@@ -28,8 +28,8 @@ public class Main {
 	private static final String URL = "http://localhost:8081/kie-server/services/rest/server";
 	private static final String user = System.getProperty("username", "donato");
 	private static final String password = System.getProperty("password", "donato");
-	private static final String CONTAINER = "example:OrderInfoProc:1.1-SNAPSHOT";
-	private static String PROCESS_ID = "OrderInfoProc.OrderInfoManagement";
+	private static final String CONTAINER = "example:OrderProc:2.0-SNAPSHOT";
+	private static String PROCESS_ID = "OrderProc.OrderManagement";
 	
 
 	private static final String QUERY_NAME_ALL_PROCESS_INSTANCES_WITH_VARIABLES = "getAllProcessInstancesWithVariables";
